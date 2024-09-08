@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <style>
+    div {
+        padding: 5px;
+        margin: 5px;
+        align-items: flex-start;
+    }
+   </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- add icon on browser tab -->
+    <link rel="icon" type="image/x-icon" href="/profile.jpg" />
+  </head>
+  <body>
+    <h3>Re-learn Form input</h3>
+
+    <form>
+      <div>
+        <label for="gender">เพศ</label>
+        <input type="radio" name="gender">ชาย
+        <input type="radio" name="gender">หญิง
+        <input type="radio" name="gender">LGBTQ
+        <label for="firstName">ชื่อ</label>
+        <input type="text" name="firstName" placeholder="(ชื่อจริง)" />
+        <label for="lastname">นามสกุล</label>
+        <input type="text" placeholder="นามสกุล" name="lastName"/>
+      </div>
+      <div>
+        <label for="dateofbirth">วัน/เดือน/ปีเกิด</label>
+        <input type="date" name="date">
+      </div>
+      <div>
+        <label for="education">การศึกษา</label>
+        <select name="education" >
+            <option value="junior high school">มัธยมศึกษาตอนต้น</option>
+            <option value="high school">มัธยมศึกษาตอนปลาย</option>
+            <option value="vocation certificate">ประกาศนียบัตรวิชาชีพ</option>
+            <option value="high vocation certificate">ประกาศนียบัตรวิชาชีพชั้นสูง</option>
+            <option value="bachelor's degree">ปริญญาตรี</option>
+            <option value="master's degree">ปริญญาโท</option>
+            <option value="doctoral's degree">ปริญญาเอก</option>
+        </select>
+      </div>
+      <div>
+        <label for="address">ที่อยู่</label> <br>
+        <textarea name="address" cols="30" rows="4"></textarea>
+      </div>
+      <div>
+        <label for="telephoneNumber">เบอร์โทรศัพท์ : </label>
+        <input type="tel" placeholder="กรอกแค่ตัวเลข" name="phoneNumber" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="โปรดกรอกอีเมล์" required name="email">
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input type="password" name="password" placeholder="password" required>
+      </div>
+
+      <div>
+        <label for="submit"></label>
+        <input type="submit" name="submit" >
+        <label for="reset"></label>
+        <input type="reset" name="reset">
+      </div>
+
+
+
+    </form>
+
+    <div>
+        <a href="index.html"><button>Home</button></a>
+    </div>
+  </body>
+</html>
