@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|shadow-multiple|emboss|outline"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semantic Tag</title>
     <!-- add icon on browser tab -->
     <link rel="icon" type="image/x-icon" href="/profile.jpg" />
     <style>
-       * {
+      * {
         box-sizing: border-box;
+      }
+
+      #welcome {
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+        text-shadow: 3px 3px 3px #ababab;
       }
 
       ul {
@@ -44,9 +54,10 @@
       }
 
       #footer {
+        font-size: 30px;
         background: #333;
         color: #fff;
-        padding: 10px;
+        padding: 30px;
         text-align: center;
       }
 
@@ -61,42 +72,54 @@
         padding: 20px;
         margin-bottom: 10px;
       }
+      #article1 {
+        color: goldenrod;
+      }
+
+      #xmrjane {
+        font-family: "Sofia", sans-serif;
+      }
+
+      h3.color-red {
+        color: red;
+      }
     </style>
   </head>
   <body>
     <header id="header" class="card">
-      <h1>HEADER</h1>
-      <p>0xmrjane</p>
+      <h1 class="font-effect-neon">HEADER</h1>
+      <p class="font-effect-neon">0xmrjane</p>
     </header>
 
     <main id="main">
       <section id="welcome" class="card">
-        <h2>ยินดีต้อนรับเข้าสู่เว็บไซต์ 0xmrjane</h2>
+        <h2 class="font-effect-shadow-multiple">
+          ยินดีต้อนรับเข้าสู่เว็บไซต์ 0xmrjane
+        </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
           cupiditate itaque possimus numquam corporis odit deserunt voluptas
           repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
           temporibus! Sed. <br />
           <a href="#" class="text-center"><button>HOME</button></a>
-         
         </p>
       </section>
 
       <section id="blog">
-        <article class="article">
-          <h3>สถานที่ท่องเที่ยวในจังหวัด</h3>
+        <article class="article" id="article1">
+          <h3 class="color-red">สถานที่ท่องเที่ยวในจังหวัด</h3>
           <p>
-            reiciendis impedit beatae? Ratione quo,
-          tenetur vel quos saepe animi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vel
-          facere. Fugiat suscipit et nam facere ipsa laborum qui alias
-          asperiores perspiciatis, nulla cumque commodi non ullam aperiam
-          praesentium iste. Aspernatur consectetur quam ad rem veritatis vel
-          dignissimos, culpa aperiam 
+            reiciendis impedit beatae? Ratione quo, tenetur vel quos saepe
+            animi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+            vel facere. Fugiat suscipit et nam facere ipsa laborum qui alias
+            asperiores perspiciatis, nulla cumque commodi non ullam aperiam
+            praesentium iste. Aspernatur consectetur quam ad rem veritatis vel
+            dignissimos, culpa aperiam
           </p>
-          <hr>
+          <hr />
         </article>
         <article class="article">
-          <h3>ร้านอาหาร</h3>
+          <h3 class="color-red">ร้านอาหาร</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vel
             facere. Fugiat suscipit et nam facere ipsa laborum qui alias
@@ -106,43 +129,45 @@
             tenetur vel quos saepe animi. Temporibus tempora maiores modi quae
             earum ea ipsam laborum necessitatibus!
           </p>
-          <hr>
+          <hr />
         </article>
         <article class="article">
-          <h3>การเดินทาง</h3>
+          <h3 class="color-red">การเดินทาง</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, vel
-            facere. Fugiat suscipit et nam facere ipsa laborum qui alias
-            asperiores perspiciatis, nulla cumque commodi non ullam aperiam
-            praesentium iste. Aspernatur consectetur quam ad rem veritatis vel
-            dignissimos, culpa aperiam reiciendis impedit beatae? Ratione quo,
-            tenetur vel quos saepe animi.
+            บัณฑิตศึกษาจำเป็นการแข่งขันวัยรุ่นทุนสอบเข้ามัธยมอาจารย์การศึกษาพิเศษสู่ผู้ใหญ่สูงวัยวิทยาศาสตร์บัณฑิตศึกษายุทธศาสตร์ครูบทบาทนักศึกษาสร้างเรียนจากที่บ้านปฐมวัยช่องว่าง
+            อาจารย์ มหาวิทยาลัยนโยบายเด็กนโยบาย
+            มัธยมผู้ใหญ่ไทยต่างประเทศสมองส่งเสริมสอนบทบาทนโยบายโครงงานวิทย์
+            ครูการแข่งขันอาจารย์การแข่งขันโครงงาน
+            โดยครูมัธยมต่างประเทศผู้ใหญ่สร้างอาจารย์วิชาการศึกษาพิเศษโดย
+            วัยสร้างเด็กความพร้อมความพร้อมห้องเรียน
+            อบรมสร้างพัฒนาอาจารย์ทุนปริญญาสมาชิกแผนการสอนสูงวัยโครงงานวิทย์บทเรียนการเรียนแผนการสอนครู
+            ทุนสมองนโยบาย
           </p>
         </article>
       </section>
     </main>
 
     <aside id="sidebar">
-        <h3>Menu</h3>
-        <ul id="main-nav">
-          <li><a href="index.html">หน้าแรก</a></li>
-          <li><a href="index.html">เกี่ยวกับ Mrjane</a></li>
-          <li><a href="index.html">ผลงานของ Mrjane</a></li>
-        </ul>
-  
-        <h3>ติดต่องาน</h3>
-        <ul>
-          <li><strong>ที่อยู่:</strong> Chaiyaphum</li>
-          <li><strong>เบอร์โทรศัพท์:</strong> (+66) 55-555-5555</li>
-          <li><strong>อีเมล:</strong> mrjane@0xmrjane.com</li>
-        </ul>
-      </aside>
+      <h3>Menu</h3>
+      <ul id="main-nav">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="index.html">เกี่ยวกับ Mrjane</a></li>
+        <li><a href="index.html">ผลงานของ Mrjane</a></li>
+      </ul>
 
-      <div class="clr"></div>
+      <h3>ติดต่องาน</h3>
+      <ul>
+        <li><strong>ที่อยู่:</strong> Chaiyaphum</li>
+        <li><strong>เบอร์โทรศัพท์:</strong> (+66) 55-555-5555</li>
+        <li><strong>อีเมล:</strong> mrjane@0xmrjane.com</li>
+      </ul>
+    </aside>
 
+    <div class="clr"></div>
 
     <footer id="footer">
-      <p>Copyright &copy; 0xmrjane.com</p>
+      <span>Copyright &copy; </span>
+      <span class="font-effect-neon" id="xmrjane">0xmrjane.com</span>
     </footer>
   </body>
 </html>
