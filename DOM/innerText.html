@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText</title>
+    <script>
+        function change() {
+            const text = document.getElementById("pid01");
+            console.log(text)
+            text.innerText = "You changed message";
+            text.style.color = "red";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>InnerTex</h1>
+    <p id="pid01">Click button below to change this text </p>
+    <button onclick="change()">click</button>
+</body>
+</html>
