@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web Storage</title>
+</head>
+<body>
+    
+    <div id="show">
+        <button onclick="showtext()">
+            click me
+        </button>
+    </div>
+
+    <div id="newele">
+
+    </div>
+
+    <script>
+        function showtext () {
+            console.log(typeof(Storage))
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("name:", "Sukar")
+                const catName =localStorage.getItem("name:");
+                console.log(catName);
+                const ele = document.getElementById("newele");
+                const para = document.createElement("p");
+                const text = document.createTextNode(`My cat name 's ${catName}`);
+                para.appendChild(text);
+                ele.appendChild(para);
+            } else document.getElementById("newele").innerHTML = "Sorry your browser not support web storage"
+        }
+    </script>
+</body>
+</html>
